@@ -1,6 +1,7 @@
 package com.project.dsa;
 
 import com.project.dsa.arrays.MaxSumSubArray;
+import com.project.dsa.arrays.TwoSum;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,9 +10,11 @@ public class DsaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DsaApplication.class, args);
-		MaxSumSubArray maxSumSubArray = new MaxSumSubArray();
+		//MaxSumSubArray maxSumSubArray = new MaxSumSubArray();
+		TwoSum ts = new TwoSum();
 		int [] nums = {5,4,-1,7,8};
-		System.out.println(maxSumSubArray.maxSubArray(nums));
+		int target = 9;
+		System.out.println(ts.twoSum(nums,target));
 	}
 
 }
